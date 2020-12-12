@@ -28,21 +28,27 @@ function rainYieldCalc(a) {
   if (rainInches >= 20) {
     bushelYield = estimatedBushelYield * 0.9;
     console.log(
-      "Accounting for a wetter than average season, your estimated yield is " +
+      "Accounting for a wetter than average season, (" +
+        rainInches +
+        " inches of rainfall) your estimated yield is " +
         bushelYield +
         " bushels per acre."
     );
   } else if (rainInches <= 10) {
     bushelYield = estimatedBushelYield * 0.8;
     console.log(
-      "Accounting for a dryer than average season, your estimated yield is " +
+      "Accounting for a dryer than average season, (" +
+        rainInches +
+        " inches of rainfall) your estimated yield is " +
         bushelYield +
         " bushels per acre."
     );
   } else {
     bushelYield = estimatedBushelYield;
     console.log(
-      "Accounting for an average amount of rainfall this season, your estimated yield is " +
+      "Accounting for an average amount of rainfall this season, (" +
+        rainInches +
+        " inches of rainfall) your estimated yield is " +
         bushelYield +
         " bushels per acre."
     );
